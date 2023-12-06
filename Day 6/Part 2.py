@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
 import re
 
-
-def loadFile():
-    global time
-    global distance
-    with open("input.txt", 'r') as file:
-        line = file.readline()
-        time = int(''.join(re.findall(r'\d+', line)))
-        line = file.readline()
-        distance = int(''.join(re.findall(r'\d+', line)))
-loadFile()
+with open("input.txt", 'r') as file:
+	line = file.readline()
+	time = int(''.join(re.findall(r'\d+', line)))
+	line = file.readline()
+	distance = int(''.join(re.findall(r'\d+', line)))
 
 numOf = 0
 output = 1
