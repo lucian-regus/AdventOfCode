@@ -13,7 +13,6 @@ def loadFile():
         for i in range(0, len(seedsRange), 2):
             for j in range(seedsRange[i], seedsRange[i] + seedsRange[i + 1]):
                 seeds.append(j)
-                print(j)
         while line:
             line = file.readline()
             if "map:" in line:
