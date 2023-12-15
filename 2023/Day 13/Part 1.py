@@ -44,23 +44,17 @@ def checkVerticalReflection(column, nextColumn):
                     return False
     return True
 
-def printMap():
-    for row in inputMap:
-        print(row)
-
 with open("input.txt", 'r') as file:
     while True:
         line = file.readline()
 
         if not line:
-            printMap()
             checkHorizontal()
             checkVertical()
             break
         stripped_line = line.strip()
 
         if not stripped_line:
-            printMap()
             checkHorizontal()
             checkVertical()
             inputMap.clear()
